@@ -541,9 +541,34 @@ nav ul li a {
     font-family: Roboto, sans-serif;
 }
 .tde{
-    border: #cc1817 solid;
+    /* border: #cc1817 solid; */
     display: flex;
     align-items: center;
+}
+.item {
+    /* border: #cc1817 solid; */
+    height: 100%;
+    width: 50%;
+    margin-left: 330px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.item ul{
+    display:flex;
+    list-style: none;
+    color: #0a84ff;
+    font-family: Roboto, sans-serif;
+    gap: 15px;
+}
+.item a{
+    transition:color 0.5 ease;
+    text-decoration: none;
+    font-size: 12px;
+}
+.item a:hover{
+   color: #f18634;
 }
 
 
@@ -572,6 +597,9 @@ nav ul li a {
     background-color: #fff;
     padding: 10px;
     text-align: center;
+  }
+  .imgs a{
+    text-decoration: none;
   }
   
   .carousel-item img {
