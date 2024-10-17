@@ -1,0 +1,125 @@
+
+footer {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 0%;
+}
+.header {
+    float: left;
+    border-top: 2px solid #f0ad4e;
+    padding: 10px 0;
+    text-align: center;
+}
+.header img {
+    height: 2rem;
+}
+.nav {
+    border-top: 2px solid #f0ad4e;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+}
+.nav a {
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.content div {
+    width: 30%;
+}
+.content .content1 .h3 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.content .content1 a:hover {
+    color: orange;
+}
+.content .content1 a {
+    text-decoration: none;
+    color: gray;
+}
+.content .content2 h4 {
+    color: #f0ad4e;
+}
+.content .content2 h5 {
+    color: black;
+    font-size: 15px;
+}
+.content .content2  {
+    margin: 5px 0;
+}
+.content .content2 p:hover{
+    color: orange;
+}
+.content .content3 h5{
+    color: black;
+    font-size: 15px;
+}
+.content .content3 p:hover {
+    color: orange;
+}
+.content .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contact div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contact div img {
+    height: 20px;
+    margin-right: 10px;
+}
+.contact div p {
+    margin: 0;
+}
+.contact p:hover{
+    color: orange;
+}
+.footer1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .content div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact div {
+        width: 100%; 
+    }
+}
+@media (max-width: 480px) {
+    .content {
+        padding: 10px;
+    }
+
+    .nav {
+        padding: 5px 0;
+    }
+
+    .header img {
+        height: 15px; 
+    }
+}
