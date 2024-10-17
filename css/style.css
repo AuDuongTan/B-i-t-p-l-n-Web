@@ -353,7 +353,7 @@ nav ul li a {
     border-bottom: none;
     justify-content: center;
 }
-.tanbeo .product{
+ .product{
     position: relative;
     width: 17%;
     height: 75%;
@@ -381,6 +381,9 @@ nav ul li a {
     color: #f75146;
     margin-left: 5px;
     
+}
+.price1{
+    margin-left: 5px;
 }
 .product a{
     text-decoration: none;
@@ -433,7 +436,7 @@ nav ul li a {
     margin-left: 5px;
     font-size: 1.5vw;
 }
-.tanbeo .product .khoangcach{
+ .product .khoangcach{
     padding-top: 19px;
 }
 .products{
@@ -457,7 +460,7 @@ nav ul li a {
     font-size: 25px;
     font-weight: 900;
 }
-.tanbeo .product .imgs-sp{
+ .product .imgs-sp{
     /* border: #cc1817 solid; */
       width: 95%;
       height: 200px;
@@ -570,70 +573,20 @@ nav ul li a {
 .item a:hover{
    color: #f18634;
 }
-
-
-
-
-
-
-
-.slide-show {
-    /* margin-top: 1000px; */
-    position: relative;
-    width: 1400px;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .list-images {
+   .spnoibat{
     display: flex;
-    transition: transform 0.4s ease-in-out;
-  }
-  
-  .imgs {
-    width: 275px;; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
-    background-color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  .imgs a{
-    text-decoration: none;
-  }
-  
-  .carousel-item img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .info {
-    margin-top: 10px;
-    text-align: left;
-  }
-  
-  .price {
-    color: red;
-    font-weight: bold;
-  }
-  
-  .btn-left,
-  .btn-right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-  }
-  
-  .btn-left {
-    left: 0;
-  }
-  
-  .btn-right {
-    right: 0;
-  }
-  
+    /* align-items: center; */
+    background-color: #ffffff;
+    /* border:  1.5px  solid #cc1817; */
+    /* border-top: none; */
+    height: 600px;
+    flex-wrap: wrap;
+    /* border-bottom: none; */
+    justify-content: center;
+   }
+.container-mtb{
+    background-color: #ffffff;
+    display: flex;
+    height: 600px;
+   border: ;
+}

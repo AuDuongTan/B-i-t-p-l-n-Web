@@ -11,40 +11,76 @@
     <header>
         <h1>CÔNG TY TNHH TMDV TIN HỌC BNI</h1>
     </header>
-    <div class="divmain">
-        <div class="logo">
-            <img alt="Tablet Plaza Logo" height="50" src="https://tabletplaza.vn/images/logos/2/logo_moi_1-01.png" width="150"/>
-        </div>
-        <div class="search-bar">
-            <input placeholder="Tìm kiếm sản phẩm" type="text"/>
-            <button><i class="fas fa-search"></i></button>
-        </div>
-        <div class="promo">
-            <img alt="0% Trả góp" height="50" src="https://tabletplaza.vn/images/promo/2/rectangle-copy-8_2x.png" width="100"/>
-        </div>
-    </div>
-    <div class="nav-bar">
-        <a href="apple.html"><i class="fab fa-apple"></i>APPLE</a>
-        <a href="samsung.html"><i class="fab fa-android"></i>SAMSUNG</a>
-        <div class="dropdown-menu">
-            <a href="#"><i class="fas fa-mobile-alt"></i>ĐIỆN THOẠI</a>
-            <div class="dropdown-menu-content">
-                <a href="#">APPLE</a>
-                <a href="#">SAMSUNG</a>
-                <a href="#">OPPO</a>
-                <a href="#">XIAOMI</a>
-                <a href="#">HÃNG KHÁC</a>
-                <a href="#">REALME</a>
-            </div>
-        </div>
-        <div class="dropdown-menu">
-            <a href="#"><i class="fas fa-tablet-alt"></i>TABLET</a>
-            <div class="dropdown-menu-content">
-                <a href="#">APPLE</a>
-                <a href="#">SAMSUNG</a>
-            </div>
-        </div>
-        <div class="dropdown-menu">
+            <div class="one">
+                <img id="imgg" src="https://tabletplaza.vn/images/logos/2/logo_moi_1-01.png" alt="">
+            <div>
+                <input  class="long-input" type="text" name="timkiem" id="timkiem" placeholder="Tìm kiếm sản phẩm">
+                <label for="timkiem"></label>
+                </div>
+            <img id="img" src="https://tabletplaza.vn/images/promo/2/rectangle-copy-8_2x.png" alt="">
+        </div> 
+    <main>
+                <nav>
+                    <ul>    
+                
+                 
+                        <li>
+                            <div class="tieude">
+                                <img  src="https://tabletplaza.vn/images/icon-menu/apple@2x.png" alt="">
+                                <a href="">APPLE</a>
+                            </div>
+                        </li>  
+                        <li>
+                            <div class="tieude">
+                                <img src="https://tabletplaza.vn/images/icon-menu/phone@2x.png" alt="">
+                                <a href="">SAMSUNG</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tieude">
+                                <img src="https://tabletplaza.vn/images/icon-menu/phone2@2x.png" alt="">
+                                <a href="">ĐIỆN THOẠI</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tieude">
+                                <img src="https://tabletplaza.vn/images/icon-menu/tablet@2x.png" alt="">
+                                <a href="">TABLET</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tieude">
+                                <img src="https://tabletplaza.vn/images/icon-menu/laptop@2x.png" alt="">
+                                <a href="">LAPTOP</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tieude">
+                                <img src="https://tabletplaza.vn/images/icon-menu/smartwatch@2x.png" alt="">
+                                <a href="">ĐỒNG HỒ</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tieude">
+                                <img src="https://tabletplaza.vn/images/icon-menu/audio@2x.png" alt="">
+                                <a href="">PHỤ KIỆN</a>
+                            </div>
+                        </li>
+                        <li>    
+                            <div class="tieude">
+                                <img src="https://tabletplaza.vn/images/icon-menu/gift@2x.png" alt="">
+                                <a href="">KHUYẾN MÃI</a>
+                            </div>
+                        </li>        
+                        <li>
+                            <div class="tieude">
+                                <img src="https://tabletplaza.vn/images/icon-menu/newspaper@2x.png" alt="">
+                                <a href="">TIN TỨC</a>
+                            </div>
+                        </li>
+                    </ul>  
+                </nav>
+        <!-- <div class="dropdown-menu">
             <a href="#"><i class="fas fa-laptop"></i>LAPTOP</a>
             <div class="dropdown-menu-content">
                 <a href="#">HP</a>
@@ -126,7 +162,7 @@
                     <a href="#">160 Mỗi trang</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <div class="product-grid">
                 <div class="product-card">
@@ -245,33 +281,33 @@
             </div>
         </div>
     </div>
-    <div class="contact-container">
-        <a class="card" href="dangKy.html">
-            <i class="fas fa-file-alt" style="color: #f57c00;"></i>
-            <div class="text">
-                <div class="title">Đăng Ký</div>
-                <div class="subtitle">Thông tin</div>
+    <div class="fixed-menu">
+        <a class="icon" href="">
+            <img  src="image/tải xuống.png">
+            <div class="container">
+            <h3>Đăng Ký</h3>
+            <p>Thông tin</p>
             </div>
         </a>
-        <a class="card" href="zaloTablet.html">
-            <img alt="Zalo logo" src="https://1000logos.net/wp-content/uploads/2022/02/Zalo-Logo-2048x1152.png"/>
-            <div class="text">
-                <div class="title">Chat Zalo</div>
-                <div class="subtitle">(8h00 - 22h00)</div>
+        <a class="icon" href="">
+            <img   src="https://img.icons8.com/plasticine/100/zalo.png" alt="zalo"/>
+            <div class="container">
+            <h3> Chat Zalo</h3>
+            <p>(8h00 - 22h00)</p>
             </div>
         </a>
-        <a class="card" href="sdtLienKet.html">
-            <i class="fas fa-phone-alt" style="color: #f44336;"></i>
-            <div class="text">
-                <div class="title">0948 666 000</div>
-                <div class="subtitle">(8h00 - 22h00)</div>
+        <a class="icon" href="">
+            <img  src="https://t4.ftcdn.net/jpg/06/74/78/03/360_F_674780368_WnC8mwiRWvGfWctYRHrdV11AZgXM2BQU.jpg"/>
+            <div class="container">
+                <h3>0948 666 000</h3>
+                <p>(8h00 - 22h00)</p>
             </div>
         </a>
-        <a class="card" href="#">
-            <img alt="Messenger logo" src="https://storage.googleapis.com/a1aa/image/B3eeeeznQJ2evjo5SVmcouEHDTyJVUoBQf9MF77xnvCmhF15E.jpg"/>
-            <div class="text">
-                <div class="title">Messenger</div>
-                <div class="subtitle">(8h00 - 22h00)</div>
+        <a class="icon" href="">
+            <img   src="https://img.icons8.com/fluency/48/facebook-messenger--v2.png" /> 
+            <div class="container">
+            <h3>Messenger</h3>
+            <p>(8h00 - 22h00)</p>
             </div>
         </a>
     </div>
