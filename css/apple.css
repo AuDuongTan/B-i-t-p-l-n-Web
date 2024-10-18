@@ -44,8 +44,11 @@ nav{
 }
  .tieude{
   
+    position: relative;
+    display: inline-block;
+
     height: 43px;
-    display: flex;
+    /* display: flex; */
 
     /* align-items: center; */
     padding-right: 5px;
@@ -160,23 +163,23 @@ nav ul li a {
 }
 
 
-.dropdown-menu {
+/* .dropdown-menu {
     position: relative;
     display: inline-block;
-}
+} */
 .dropdown-menu-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 5;
+    z-index: 1001;
     padding: 10px 0 10px 0;
 }
-.dropdown-menu:hover .dropdown-menu-content{
+.tieude:hover .dropdown-menu-content{
     display: block;
 }
-.nav-bar .dropdown-menu .dropdown-menu-content a {
+main .tieude .dropdown-menu-content a {
     color: black;
 }
 .divmain {
