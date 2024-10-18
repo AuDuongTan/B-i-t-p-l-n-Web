@@ -5,6 +5,7 @@
 
 }
 body{
+    
 margin: 0px;
 background-color: #f5f5f5;
 }
@@ -15,15 +16,13 @@ header{
     justify-content: center;
     align-items: center;
     padding: 5px 0;
-   
-   
 }
 header h1{
     /* display: flex;
     text-align: center; */
     color: whitesmoke;
     font-family: Roboto, sans-serif;
-    font-size: 2vw;;
+    font-size: 2vw;
     letter-spacing: 3px;
 }
 .one{
@@ -348,11 +347,13 @@ nav ul li a {
     background-color: #ffffff;
     border:  1.5px  solid #cc1817;
     border-top: none;
-    height: 600px;
+    height: 200%;
     flex-wrap: wrap;
     border-bottom: none;
     justify-content: center;
 }
+
+
  .product{
     position: relative;
     width: 17%;
@@ -378,8 +379,9 @@ nav ul li a {
 .product .price {
     font-size: 2vw;
     font-weight: bold;
-    color: #f75146;
+    color:#ff453a !important;
     margin-left: 5px;
+    
     
 }
 .price1{
@@ -480,7 +482,7 @@ nav ul li a {
 .qcao{
     height: 30px;
     margin-top: 10px;
-    margin-bottom: 180px;
+    margin-bottom: 160px;
 }
 .qcao img{
     width: 100%;
@@ -525,7 +527,9 @@ nav ul li a {
     border-radius: 5px;
   /* text-align: center; */
 }
-
+ .product .gia {
+    margin-bottom: 200px;
+}
 .star {
     display: flex;
     width: 50px;
@@ -542,6 +546,7 @@ nav ul li a {
 .tde h3{
     color: #2e3a47;
     font-family: Roboto, sans-serif;
+    
 }
 .tde{
     /* border: #cc1817 solid; */
@@ -554,18 +559,19 @@ nav ul li a {
     width: 50%;
     margin-left: 330px;
     display: flex;
-    justify-content: center;
+    /* margin-right: 0px; */
+    justify-content:end;
     
     
 }
 .item ul{
     display:flex;
     list-style: none;
-    color: #0a84ff;
     font-family: Roboto, sans-serif;
     gap: 15px;
 }
 .item a{
+     color: #0a84ff;
     transition:color 0.5 ease;
     text-decoration: none;
     font-size: 12px;
@@ -573,7 +579,21 @@ nav ul li a {
 .item a:hover{
    color: #f18634;
 }
-   .spnoibat{
+.discount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+    bottom: 25px;
+    height: 24px;
+    width: 23%;
+    color: #fff;
+    background-color: #ff453a ;
+    border-radius: 4px;
+}
+
+.spnoibat{
     display: flex;
     /* align-items: center; */
     background-color: #ffffff;
@@ -585,8 +605,40 @@ nav ul li a {
     justify-content: center;
    }
 .container-mtb{
+    display: flex;
     background-color: #ffffff;
     display: flex;
-    height: 600px;
-   border: ;
+    height: 450px;
+    margin-top: 8px;
+   /* border: red solid; */
+}
+.container-mtb .product{
+        width: 18%;
+        height: 87%;
+        margin: 11px;
+        margin-top: 0px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      /* text-align: center; */
+}
+.container-mtb img{
+       
+        width: 95%;
+        height: 180px;
+        /* object-fit: cover; */
+        transition: transform 0.3s ease;
+        margin: 5px ;
+        margin-top: 5px;
+}
+.product .img-sp img{
+        max-width: 100%;
+    }
+.product:hover img{ /*chỉ có ảnh mới chuyển động nhẹ*/
+        transform: translateY(-6px);
+}
+.tde .mtb{
+    padding-top: 10px;
+}
+.gia{
+   margin-top: 40px;
 }
