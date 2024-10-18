@@ -87,7 +87,7 @@
                     </ul>  
                 </nav>
    
-    <!-- <div class="fixed-menu">
+    <div class="fixed-menu">
         <a class="icon" href="">
             <img  src="image/tải xuống.png">
             <div class="container">
@@ -116,7 +116,7 @@
             <p>(8h00 - 22h00)</p>
             </div>
         </a>
-    </div> -->
+    </div>
     <div class="flex">
        <a class="left" href="">
         <div class="images">
@@ -624,7 +624,6 @@
                     <p class="price">7.990.000 ₫</p>
                 </div>
             </div>
-<<<<<<< HEAD
             <div class="tde">
                 <div >
                     <h3 class="mtb">ĐỒNG HỒ THÔNG MINH</h3>
@@ -941,10 +940,22 @@
                     <p class="price">20.990.000 ₫</p>
                 </div>
                 </div>
+
             </div>
              
 
     
+=======
+            <div id="footer-placeholder"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('footer-placeholder').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading footer:', error));
+            </script>    
+>>>>>>> efd0e891dcdefdb5e1ff8833f16b0502ae8c1d78
     </main>
   
   
