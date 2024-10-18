@@ -624,6 +624,7 @@
                     <p class="price">7.990.000 ₫</p>
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="tde">
                 <div >
                     <h3 class="mtb">ĐỒNG HỒ THÔNG MINH</h3>
@@ -950,6 +951,18 @@
             })
             .catch(error => console.error('Error loading footer:', error));
     </script>
+=======
+            
+            <div id="footer-placeholder"></div>
+            <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('footer-placeholder').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading footer:', error));
+            </script>
+>>>>>>> 918005aef89b15e52b862a46d36972aac5b93224
     </main>
   
   
