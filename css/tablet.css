@@ -1,0 +1,553 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+margin: 0px;
+background-color: #f5f5f5;
+}
+header{
+    background-color: rgba(24,53,67,255);
+    height: 37px;
+    display: flex; /* Sử dụng flexbox */
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+   
+   
+}
+header h1{
+    /* display: flex;
+    text-align: center; */
+    color: whitesmoke;
+    font-family: Roboto, sans-serif;
+    font-size: 2vw;;
+    letter-spacing: 3px;
+}
+.one{
+    
+    background-color: #ffffff;
+    height:100px;
+    display: flex;/* Sử dụng flexbox */
+    align-items: center; /* can giữa theo chiều dọc */
+    /* justify-content: center; */
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgba(24,53,67,255);
+    height:42px;
+   overflow: hidden;
+}
+ .tieude{
+  
+    position: relative;
+    display: inline-block;
+
+    height: 43px;
+    /* display: flex; */
+
+    /* align-items: center; */
+    /* padding-right: 5px;
+    transition: background-color 0.2s ease; */
+
+}
+.tieude:hover {
+    background-color: #f18634;
+}
+nav ul li div img{
+    
+    height: 16px;
+    margin-top: 10px;
+    margin-right: -5px;
+    
+}
+nav ul{
+    
+    display: flex; /*Sử dụng flexbox*/
+    
+    /* justify-content:center; */
+    padding-left: 30px;
+    list-style: none;/* xoa dấu chấm */
+    /* gap: 20px; */
+}
+nav ul li a {
+    font-family: Roboto,sans-serif;
+    text-decoration: none; /* Bỏ gạch chân dưới các liên kết */
+    padding: 9px 17px; /*Thêm khoảng đệm cho liên kết*/
+    color: white;
+    font-size: 16px;
+    align-items: center; /*can giữa theo chiều dọc*/
+    display: inline-block;
+    position: relative;
+}
+nav ul li .tieude .dropdown-menu-content a:hover {
+    display: block;
+} 
+.one #imgg{
+    width: 16%;
+    height:34px; 
+    margin-left: 5%;
+   
+}
+.one #img{
+    width: 16%;
+    height:80px;
+    margin-left: 2%;
+}
+.long-input{
+    align-items: center;
+    width: 500px;
+    height: 40px;
+    margin: 30px 20px 25px 20px;
+    padding: 10px; /* Khoảng cách bên trong  */
+    font-size: 12px; /* Kích thước chữ */
+    border: 1px solid #ccc; /* Đường viền */
+    border-radius: 4px; /* Bo góc  */
+    font-family: normal;
+    border-color: #dce3ea;
+    
+}
+@media (max-width: 768px) {
+    .long-input {
+        width: 90%; /* Chiều rộng input giảm xuống */
+        margin: 0 auto; /* Căn giữa */
+    }
+}
+
+
+
+.fixed-menu {
+    position: fixed;
+    right: 10px; /* Căn cách cạnh phải */
+    bottom: 20px; /* Căn cách cạnh dưới */
+    z-index: 1000; /* Đảm bảo nằm trên các phần tử khác */
+    height:300px;
+}
+
+.fixed-menu a {
+    display: flex;/* chế độ flex box */
+    align-items: center; /*Căn giữa icon và text theo chiều dọc */
+    background-color: #fff;
+    border-radius: 9px;/* làm cái góc bo lại*/
+    padding: 5px;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 5px;/*khoảng cách giữa các thẻ a*/
+    box-shadow: 1px 1px 30px 0px rgba(0, 0, 0, 0.1);/*tạo cái bóng: đầu tiên là vị trí đổ bóng sang phải, thứ hai đổ bong lên(- thì lên + thì xuống, thứ ba là dộ mờ của bóng, thứ tư là độ lan rộng của bóng*/
+    text-align: center;
+    height: 70px; /* Đặt chiều cao để chứa nội dung */
+    text-decoration: none;/* xóa gạch chân */
+    justify-content: center;/* căn giữa cái icon và text theoo chiều ngang*/
+    width: 176px; /* Đặt chiều rộng để phù hợp với nội dung */
+}
+.fixed-menu .icon img {
+    width: 40px;
+    height: 35px;
+    margin-left: 0px;
+    margin-right: 5px; /* khoảng cách giữa icon và text bên phải */
+}
+.fixed-menu .icon p {
+    padding: 4px 0;
+    font-size: 15px;
+    color:#2e3a47;/* màu chữ*/
+}
+.fixed-menu .icon h3{
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+.fixed-menu .container{
+   
+    flex-direction: column;
+   
+    
+}
+
+
+/* .dropdown-menu {
+    position: relative;
+    display: inline-block;
+} */
+.dropdown-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999;
+    padding: 10px 0 10px 0;
+}
+.tieude:hover .dropdown-menu-content:hover {
+    display: block;
+}
+.tieude .dropdown-menu-content a {
+    color: black;
+}
+.divmain {
+    background-color: #ffffff;
+    padding: 30px 0;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.logo img {
+    height: 50px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+.search-bar button {
+    padding: 10px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.search-bar button i {
+    color: white;
+}
+.promo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.promo img {
+    height: 50px;
+}
+.nav-bar {
+    background-color: #0d3b4a;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.nav-bar a:hover {
+    background-color: orange;
+}
+.nav-bar a i {
+    margin-right: 5px;
+}
+.advertisement {
+    background-color: white;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    display: flex;
+    
+}
+.advertisement .ads1 {
+    width: 70%;
+    height: auto;
+    margin-bottom: 1%;
+    /* box-sizing: border-box; */
+}
+.advertisement .ads2 {
+    width: 40%;
+    height: auto;
+    left: 1%;
+    margin-bottom: 1%;
+}
+.main {
+    -webkit-text-size-adjust: 100%;
+    --image-zoom-animation-time: 200ms;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #2e3a47;
+    font-family: Roboto,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    background: #f5f5f5;
+    position: relative;
+    z-index: 1;
+}
+.menu {
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.menu-item {
+    display: inline-block;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+.menu .menu-item:hover{
+    color: orange;
+}
+.menu-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.dropdown button {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown button:hover {
+    background-color: #54708c;
+}
+.dropdown button:after {
+    content: '\25BC';
+    margin-left: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #465f73;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.container {
+    width: 90%;
+    margin: 20px auto;
+    
+}
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(25% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.product-card a {
+    text-decoration: none;
+    color: black;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3 ease;
+}
+.product-card img:hover{
+    transform: translateY(-5px);
+}
+.product-card .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.product-card .badge.hot-sale {
+    background-color: #ff0000;
+}
+.product-card .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.product-card .price {
+    color: #ff0000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+.product-card .feature {
+    position: relative;
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+.product-card .discount {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.pagination a {
+    color:#999;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+.pagination a.active {
+    background-color: orange;
+    color: #fff;
+}
+.pagination a:hover {
+    background-color: gray;
+    color: orange;
+}
+/* Điều chỉnh cho màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+    .divmain, .advertisement, .menu {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/* Điều chỉnh cho màn hình nhỏ hơn 480px */
+@media (max-width: 480px) {
+    .product-card {
+        width: calc(100% - 20px);
+    }
+    .divmain, .advertisement, .menu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+.contact-container {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    max-width: 15%;
+    margin: 40px auto; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img, .card i {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.card i {
+    font-size: 40px;
+}
+
+.card .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .text .title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card .text .subtitle {
+    font-size: 0.875rem;
+    color: #666;
+}
+@media (max-width: 600px) {
+    .card {
+        padding: 10px;
+    }
+
+    .card img, .card i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .card .text .title {
+        font-size: 0.9rem;
+    }
+
+    .card .text .subtitle {
+        font-size: 0.75rem;
+    }
+}
