@@ -304,6 +304,9 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     color: black;
     
 }
+.menu .menu-item:hover{
+    color: orange;
+}
 .menu-item img {
     width: 30px;
     height: 30px;
