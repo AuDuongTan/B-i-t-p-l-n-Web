@@ -262,6 +262,7 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     margin-bottom: 1%;
     padding-left: 0px;
     flex-wrap: wrap;
+
 }
 
 .advertisement .ads1, 
@@ -299,9 +300,14 @@ nav ul li .tieude .dropdown-menu-content a:hover {
 
 }
 .menu {
+    /* border: red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     margin-left: 0%;
-    margin-right: 10%;
+    margin-right: 0%;
+    margin-bottom: 1%;
 }
 .menu-item {
     display: inline-block;
@@ -309,21 +315,42 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     border: 1px solid #ccc;
     border-radius: 20px;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 0 5px;
     text-decoration: none;
     color: black;
     
 }
 .menu-item img {
-    width: 130px;
-    height: 30px;
+    width: 105px;
+    height: 25px;
     margin-right: 10px;
+
+}
+.menu-item p{
+    width: 105px;
+    height: 25px;
+    font-size: 14px;
+    color: #465f73;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+}
+.chinhhang{
+    position: absolute;
+    right:20px;
+    bottom: 100px;
+    max-width: 40%;
+    height: 25%;
+    z-index: 1;
+}
+hr{
+    margin-bottom: 1%;
+    
 }
 .dropdown {
     position: relative;
     display: inline-block;
     background-color: white;
-    margin-left: 1%;
+    margin-left: 0%;
     margin-right: 1%;
 }
 .dropdown button {
@@ -348,14 +375,12 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    
 }
 .dropdown-content a {
     color: black;
     padding: 10px 16px;
     text-decoration: none;
     display: block;
-    z-index:2;
 }
 .dropdown-content a:hover {
     background-color: #465f73;
@@ -368,7 +393,6 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     /* border: red solid; */
     width: 98.5%;
     margin-left: 10px;
-
     
     
 }
@@ -424,22 +448,18 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     color: #3a3a3c !important;
 }
 .product-card .price {
+    position: absolute;
     color: #ff0000;
     font-size: 18px;
     font-weight: bold;
+    bottom: 7px;
 }
 .product-card .old-price {
     text-decoration: line-through;
     color: #999;
     font-size: 14px;
-}
-.chinhhang{
-    position: absolute;
-    right:20px;
-    bottom: 100px;
-    max-width: 40%;
-    height: 25%;
-    z-index: 1;
+    margin-bottom: 10px;
+   
 }
 .product-card .feature {
     position: relative;
@@ -491,7 +511,6 @@ nav ul li .tieude .dropdown-menu-content a:hover {
         margin-right: 2%;
     }
 }
-
 /* Điều chỉnh cho màn hình nhỏ hơn 480px */
 @media (max-width: 480px) {
     .product-card {
