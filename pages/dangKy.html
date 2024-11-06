@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/dangKy.css">  
+  <link rel="stylesheet" type="text/css" href="../css/dangKy.css">  
   <title>Đăng ký nhận ưu đãi</title>
 </head>
 <body>
   <div class="register" >
     <h2>ĐIỀN THÔNG TIN ĐỂ NHẬN ƯU ĐÃI VÀ KHUYÊN MÃI MỚI NHẤT</h2>
-    <form >
+    <form id="registrationForm" action="">
       <div class="input-group">
         <label for="name">Họ và tên <span style="color: red;">*</span></label>
         <input type="text" id="name" required>
@@ -19,7 +19,7 @@
         <input type="tel" id="phone" required>
       </div>
       <div class="error" id="errorMessage" style="color:#f00"></div>
-      <button class="dangKy" onclick="checkThongTin()">ĐĂNG KÝ</button>
+      <button type="submit" class="dangKy"  onclick="checkThongTin()">ĐĂNG KÝ</button>
     </form>
   </div>
   <script>
@@ -27,24 +27,26 @@
       var name = document.getElementById("name").value;
       var phone = document.getElementById("phone").value;
       var errorMessage = document.getElementById("errorMessage");
-      var phonePattern = /^[0-9]+$/;
+      var phonePattern = /^[0-9]+$/; // 0147258369
       errorMessage.innerHTML = ""; // Xóa thông báo lỗi cũ
       
       // Kiểm tra xem tên có chứa ít nhất hai từ
-      if (!name.includes(" ") ||name.length < 2) {
+      if (!name.includes(" ") || name.length < 2) {
         errorMessage.innerHTML = "Vui lòng điền đầy đủ họ và tên.<br>";
         return false;
       }
 
       // Kiểm tra xem số điện thoại có phải là các ký tự số và không trống
-      if (!phonePattern.test(phone)) {
-        errorMessage.innerHTML += "Vui lòng nhập số điện thoại hợp lệ.<br>";
+      else if (!phonePattern.test(phone)) {
+        errorMessage.innerHTML = "Vui lòng nhập số điện thoại hợp lệ.<br>";
         return false;
       }
 
       // Nếu tất cả các điều kiện được thỏa mãn, hiển thị thông báo "Thành công"
-      alert("Thành công");
-      return true;
+      else{
+        alert("Thành công");
+        return true;
+      }
     }
   </script>
 </body>
