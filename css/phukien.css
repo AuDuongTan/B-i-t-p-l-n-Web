@@ -40,23 +40,33 @@ nav{
     align-items: center;
     background-color: rgba(24,53,67,255);
     height:42px;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
  .tieude{
   
-    position: relative;
-    display: inline-block;
-
     height: 43px;
-    /* display: flex; */
+    display: flex;
 
     /* align-items: center; */
-    /* padding-right: 5px;
-    transition: background-color 0.2s ease; */
-
+    padding-right: 5px;
+    transition: background-color 0.2s ease;
+    position: relative;
+    display: inline-block;
 }
 .tieude:hover {
     background-color: #f18634;
+}
+.tieude-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 9999;
+}
+.tieude:hover .tieude-dropdown-content{
+    display: block;
 }
 nav ul li div img{
     
@@ -67,12 +77,21 @@ nav ul li div img{
 }
 nav ul{
     
-    display: flex; /*Sử dụng flexbox*/
+    display: flex; /* Sử dụng flexbox */
     
     /* justify-content:center; */
     padding-left: 30px;
     list-style: none;/* xoa dấu chấm */
     /* gap: 20px; */
+}
+nav .tieude-dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.tieude-dropdown-content a:hover{
+    background-color: gray;
 }
 nav ul li a {
     font-family: Roboto,sans-serif;
