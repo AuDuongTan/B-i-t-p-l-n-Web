@@ -353,6 +353,9 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     font-weight: 600;
     font-family: Roboto, sans-serif;
 }
+.menu-item p:hover{
+    color: orange;
+}
 .chinhhang{
     position: absolute;
     right:20px;
