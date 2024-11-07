@@ -289,7 +289,9 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     max-width: 100%;
     flex-grow: 1;
 }
-
+.advertisement .ads1{
+    margin-right: 8px;
+}
 .advertisement .ads1 img, 
 .advertisement .ads2 img {
     width: 100%;
