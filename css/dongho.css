@@ -279,27 +279,39 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     max-width: 100%;
     display: flex;
     margin-bottom: 1%;
-    padding-left: 0px;
-    flex-wrap: wrap;
+    padding-left: 0;
+    flex-wrap: nowrap; /* Để đảm bảo hai banner nằm cạnh nhau */
+    overflow: hidden; /* Giữ không cho các phần tử con tràn ra ngoài */
 }
 
-.advertisement .ads1, 
-.advertisement .ads2 {
-    height: auto;
-    max-width: 100%;
-    flex-grow: 1;
-}
 .advertisement .ads1{
-    margin-right: 8px;
+    flex: 2;
+    max-width: 100%;
+    margin-right: 25px;
 }
-.advertisement .ads1 img, 
+.advertisement .ads2 {
+    flex: 1;
+    max-width: 100%;
+}
+
+.advertisement .ads1 img{
+    width: 100%;
+    height: 100%;
+}
 .advertisement .ads2 img {
     width: 100%;
-    height: auto; 
+    display: block;
 }
+
 @media only screen and (max-width: 768px) {
     .advertisement {
-        flex-direction: column; 
+        flex-direction: column;
+    }
+    .advertisement .ads1, 
+    .advertisement .ads2 {
+        max-width: 100%; /* Mỗi phần tử sẽ chiếm 100% chiều rộng trên màn hình nhỏ */
+        margin-right: 0; /* Loại bỏ khoảng cách bên phải */
+        margin-bottom: 10px; /* Tạo khoảng cách giữa hai banner trên màn hình nhỏ */
     }
 }
 
