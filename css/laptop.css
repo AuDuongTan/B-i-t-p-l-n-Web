@@ -436,8 +436,10 @@ nav ul li .tieude .dropdown-menu-content a:hover {
 }
 .product-card .title {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     margin: 10px 0;
+    font-family: Roboto, sans-serif;
+    color: #3a3a3c !important;
 }
 .product-card .price {
     color: #ff0000;
