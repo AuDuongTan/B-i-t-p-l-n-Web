@@ -388,7 +388,7 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     padding: 10px 16px;
     text-decoration: none;
     display: block;
-    z-index:2;
+    z-index:10000;
 }
 .dropdown-content a:hover {
     background-color: #465f73;
