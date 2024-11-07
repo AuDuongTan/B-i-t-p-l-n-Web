@@ -1,40 +1,32 @@
 
-.datetime{
-    color: gray;
-    margin-right: 15px;
-    font-size: 12px;
-    margin-bottom: 10px;
-    
+.main-body{
+    width: 1200px;
+    margin-left: 155px;
+    background-color: white;
 }
-.auth{
-    color: gray;
-    font-size: 12px;
-    margin-bottom: 10px;
+.pic{
+    width: 900px;
+    height: 1440px;
 }
-.h-1{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-
-}
-body{
-font-family: 'Roboto' !important;
-margin: 0px;
-background-color: #f5f5f5;
-
-}
-.sub-menu {
+.sub-menu{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 15px 0px 15px 0px;
 }
-.sub-menu-info-f1 {
+.sub-menu-info{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: black;
+    font-family: Roboto, sans-serif;
+    
+}
+.sub-menu-info-f1{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0%;
@@ -46,20 +38,14 @@ background-color: #f5f5f5;
     font-family: Roboto, sans-serif;
     line-height: 1.5;
 }
-.sub-menu-info {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0%;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 0;
-    color: black;
-    font-family: Roboto, sans-serif;
-}
 a{
     color: black;
     text-decoration: none;
+}
+.h-1{
+    text-align: center;
+    width: 900px;
+    
 }
 .block{
     position: flex;
@@ -67,32 +53,84 @@ a{
     margin-left:155px ;
     
 }
-.main-body{
-    margin-left: 155px;
-    width: 1200px;
+.datetime{
+    color: gray;
+    margin-right: 15px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    
 }
-p{
-    line-height: 1.2;
+.auth{
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 25px;
 }
-.pic1 {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    width: 1200px;
-    height: 650px;
+.h-1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 150px;
 }
-h4{
-    margin-top: 40px;
-    margin-bottom:20px;
+.p1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    width: 900px;
+    margin-left: 150px;
 }
-li{
-    margin-left: 20px;
-}
-ul{
+.h3-1{
     margin-top: 10px;
-    margin-bottom: 10px;
-    line-height: 1.2;
+    width: 900px;
+    margin-left: 150px;
 }
-/* End tintuccon */
+.pic2{
+    margin-left: 155px;
+}
+h2{
+    color: #f18634;
+    margin-top: 50px;
+}
+.fi-container{
+    margin-top: 50px;
+    margin-left: 155px;
+}
+.cnt-row{
+    width: 1200px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    display: flex;
+}
+.cnt-box{
+    width: 450px;
+    margin-right: 40px;
+    display: flex;
+}
+.cnt-box-pic{
+    width: 200px;
+    height: 150px;
+}
+.cnt-box-title{
+    font-size: 18px;
+}
+.cnt-box-auth{
+    color: gray;
+    font-size: 16px;
+    margin-top: 50px;
+}
+/*/* End tintuc1.css */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    
+margin: 0px;
+background-color: #f5f5f5;
+
+}
 header{
     background-color: rgba(24,53,67,255);
     height: 37px;
