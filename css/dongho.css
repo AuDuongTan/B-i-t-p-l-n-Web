@@ -380,7 +380,7 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     background-color: white;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10000;
     
 }
 .dropdown-content a {
@@ -388,7 +388,7 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     padding: 10px 16px;
     text-decoration: none;
     display: block;
-    z-index:10000;
+    z-index:100000;
 }
 .dropdown-content a:hover {
     background-color: #465f73;
