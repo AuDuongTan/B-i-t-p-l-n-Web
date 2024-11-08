@@ -449,6 +449,7 @@ nav ul li .tieude .dropdown-menu-content a:hover {
     bottom: 100px;
     max-width: 40%;
     height: 25%;
+    z-index: 1;
 }
 .product-card .badge.hot-sale {
     background-color: #ff0000;
